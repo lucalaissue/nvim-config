@@ -7,17 +7,26 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.encoding = "utf-8"
 vim.opt.termguicolors = true
+vim.opt.cursorline = true
+vim.opt.autoread = true
+vim.cmd 'colorscheme edge'
+vim.cmd 'set nowrap'
 
-require("monokai").setup { palette = require("monokai").pro }
--- lsp
-require("cmp-config")
-require("lsp-colors-config")
-require("lsp")
-require("lualine-config")
--- require("bufferline-config")
+-- Keybindings
 require("keybindings")
+
+-- LSP
+require("lsp")
+require("cmp-config")
+
+-- Customization
+require("lsp-colors-config")
+require("lualine-config")
+require("indent-blankline-config")
+
+-- Tools
+require("harpoon-config")
 require("toggleterm-config")
 require("nvimtree-config")
-require("telescope-config")
-require("indent-blankline-config")
+require("vgit-config")
 

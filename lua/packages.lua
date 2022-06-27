@@ -21,12 +21,13 @@ require('packer').startup(function()
     -- Customization
 	use 'onsails/lspkind.nvim' -- Icons in completion
     use 'folke/lsp-colors.nvim' -- Colors depending on error
-	use 'tanvirtin/monokai.nvim' -- Theme
 	use 'nvim-lualine/lualine.nvim' -- line
+    use 'sainnhe/edge'
 
     -- Utils
     use 'akinsho/toggleterm.nvim'
     use 'lukas-reineke/indent-blankline.nvim'
+    use 'tanvirtin/vgit.nvim' -- Git plugin
 
     -- Navigation
     use 'kyazdani42/nvim-tree.lua' -- Tree explorer

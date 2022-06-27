@@ -1,6 +1,7 @@
 local telescope = require("telescope")
 local actions = require("telescope.actions")
 
+
 telescope.setup{
     defaults = {
         mappings = {
@@ -22,4 +23,3 @@ M.project_files = function()
   if not ok then require"telescope.builtin".find_files(opts) end
 end
 return M
-

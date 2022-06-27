@@ -4,3 +4,5 @@ require('nvim-tree').setup{
     hijack_netrw = true,
     open_on_setup = false
 }
+
+vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
