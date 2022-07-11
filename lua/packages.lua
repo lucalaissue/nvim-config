@@ -28,6 +28,7 @@ require('packer').startup(function()
     use 'akinsho/toggleterm.nvim'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'tanvirtin/vgit.nvim' -- Git plugin
+	use 'tpope/vim-sleuth' -- Tab styles
 
     -- Navigation
     use 'kyazdani42/nvim-tree.lua' -- Tree explorer
@@ -37,3 +38,4 @@ require('packer').startup(function()
     -- use 'folke/trouble.nvim'
     -- use { 'akinsho/bufferline.nvim', tag = "v2.*" }
 end)
+

@@ -2,15 +2,17 @@ require("packages")
 vim.opt.encoding = "utf-8"
 vim.opt.nu = true
 vim.opt.rnu = true
-vim.opt.tabstop = 4
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
 vim.opt.encoding = "utf-8"
 vim.opt.termguicolors = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
 vim.cmd 'colorscheme edge'
 vim.cmd 'set nowrap'
+
+-- Tab settings
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.cmd 'set noexpandtab'
 
 -- Keybindings
 require("keybindings")

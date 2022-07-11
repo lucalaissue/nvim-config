@@ -1,4 +1,3 @@
-
 require("vgit").setup()
 
 vim.o.updatetime = 300
@@ -7,3 +6,4 @@ vim.wo.signcolumn = 'yes'
 
 -- Git
 vim.api.nvim_set_keymap("n", "<leader>gc", ":lua require('telescope.builtin').git_commits()<CR>", {noremap = true, silent = true})
+
