@@ -1,0 +1,13 @@
+vim.opt.encoding = "utf-8"
+vim.opt.nu = true
+vim.opt.rnu = true
+vim.opt.encoding = "utf-8"
+vim.opt.termguicolors = true
+vim.opt.cursorline = true
+vim.opt.autoread = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.cmd 'set noexpandtab'
+vim.cmd 'set nowrap'
+vim.cmd 'set formatoptions-=cro'
+

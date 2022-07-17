@@ -40,6 +40,10 @@ vim.api.nvim_set_keymap("i", "]", "]<C-g>u",    {noremap = true, silent = true})
 -- Disable highlight after search
 vim.api.nvim_set_keymap("c", "<CR>", "<CR>:noh<CR>", {noremap = true, silent = true})
 
--- Telescope
-vim.api.nvim_set_keymap("n", "<leader>f", ":lua require'telescope-config'.project_files()<CR>", {noremap = true, silent = true})
+-- Delete buffer
+vim.api.nvim_set_keymap("n", "<leader>q", ":bdelete<CR>", {noremap = true, silent = true})
+
+-- Navigate buffers
+vim.api.nvim_set_keymap("n", "<tab>",   ":bnext<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<s-tab>", ":bprev<CR>", {noremap = true, silent = true})
 
