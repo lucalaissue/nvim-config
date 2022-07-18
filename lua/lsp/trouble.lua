@@ -1,5 +1,6 @@
 require("packer").use {
 	'folke/trouble.nvim',
+	requires = { 'kyazdani42/nvim-web-devicons' },
 	config = function()
 		require("trouble").setup {
 			position = "bottom", -- position of the list can be: bottom, top, left, right
@@ -49,5 +50,6 @@ require("packer").use {
 			use_diagnostic_signs = true
 		}
 		vim.api.nvim_set_keymap("n", "<Leader>D",  "<CMD>Trouble workspace_diagnostics<CR>", {noremap = true, silent = true})
+		vim.api.nvim_set_keymap("n", "<Leader>d",  "<CMD>Trouble document_diagnostics<CR>", {noremap = true, silent = true})
 	end
 }

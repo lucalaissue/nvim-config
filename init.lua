@@ -1,4 +1,4 @@
-require("user.packages")
+require("utils.packer-bootstrap") -- required
 require("user.vim-settings")
 require("user.keybindings")
 require("lsp.lsp")
@@ -8,9 +8,10 @@ require("lsp.trouble")
 require("customization.gruvbox")
 require("customization.indent-blankline")
 require("customization.lualine")
+require("tools.autopairs")
 require("tools.harpoon")
 require("tools.telescope")
 require("tools.toggleterm")
 require("tools.nvimtree")
---require("tools.vgit")
+require("utils.packer-sync") -- required
 

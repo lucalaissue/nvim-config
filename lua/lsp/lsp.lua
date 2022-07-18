@@ -1,6 +1,6 @@
 require("packer").use {
 	'neovim/nvim-lspconfig',
-	requires = {'williamboman/nvim-lsp-installer'},
+	requires = { 'williamboman/nvim-lsp-installer', 'hrsh7th/cmp-nvim-lsp' },
 	config = function()
 		local lsp_installer = require('nvim-lsp-installer')
 
@@ -44,7 +44,9 @@ require("packer").use {
 		end
 
 		local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-		lsp_installer.setup{}
+		lsp_installer.setup{
+			ensure_installed = {"clangd", "cssls", "html", "jsonls", "pyright", "sumneko_lua", "tsserver", "yamlls"}
+		}
 		for _, server in pairs(servers) do
 			require('lspconfig')[server].setup {
 				on_attach = on_attach,

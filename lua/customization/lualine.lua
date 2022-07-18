@@ -2,6 +2,9 @@ require("packer").use {
 	'nvim-lualine/lualine.nvim',
 	requires = {'kyazdani42/nvim-web-devicons'},
 	config = function()
+		local function osTime()
+			return "T : "..os.date('%H:%M')
+		end
 		require('lualine').setup {
 			options = {
 				icons_enabled = true,
@@ -15,9 +18,9 @@ require("packer").use {
 			sections = {
 				lualine_a = {'mode'},
 				lualine_b = {'branch', 'diff', 'diagnostics'},
-				lualine_c = {'filename'},
+				lualine_c = {{'filename', path = 1}},
 				lualine_x = {'encoding', 'filetype'},
-				lualine_y = {},
+				lualine_y = { osTime },
 				lualine_z = {'location'}
 			},
 			inactive_sections = {

@@ -1,5 +1,6 @@
 require("packer").use {
 	'nvim-telescope/telescope.nvim',
+	requires = { 'kyazdani42/nvim-web-devicons' },
 	config = function()
 		local telescope = require("telescope")
 		local actions = require("telescope.actions")
@@ -14,9 +15,6 @@ require("packer").use {
 						["<C-j>"] = actions.move_selection_next,
 						["<C-k>"] = actions.move_selection_previous,
 					}
-				},
-				layout_config = {
-					horizontal = {width = 0.9},
 				}
 			}
 		}

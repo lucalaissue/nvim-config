@@ -1,6 +1,7 @@
 require("packer").use {
 	'hrsh7th/nvim-cmp',
 	requires = {
+		'kyazdani42/nvim-web-devicons',
 		'onsails/lspkind.nvim',
 		'hrsh7th/cmp-nvim-lsp',
 		'hrsh7th/cmp-nvim-lsp-signature-help',
