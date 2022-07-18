@@ -1,6 +1,4 @@
-local use = require("packer").use
-
-use {
+require("packer").use {
 	'lukas-reineke/indent-blankline.nvim',
 	config = function()
 		vim.opt.list = true

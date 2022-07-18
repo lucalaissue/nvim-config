@@ -1,49 +1,51 @@
 vim.g.mapleader = " "
 
+local keybindingOpts = {noremap = true, silent = true}
+
 -- Hard mode
-vim.api.nvim_set_keymap("n", "<Left>",  "", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<Right>", "", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<Up>",    "", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<Down>",  "", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("x", "<Left>",  "", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("x", "<Right>", "", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("x", "<Up>",    "", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<Left>",  "", keybindingOpts)
+vim.api.nvim_set_keymap("n", "<Right>", "", keybindingOpts)
+vim.api.nvim_set_keymap("n", "<Up>",    "", keybindingOpts)
+vim.api.nvim_set_keymap("n", "<Down>",  "", keybindingOpts)
+vim.api.nvim_set_keymap("x", "<Left>",  "", keybindingOpts)
+vim.api.nvim_set_keymap("x", "<Right>", "", keybindingOpts)
+vim.api.nvim_set_keymap("x", "<Up>",    "", keybindingOpts)
 
 -- Replace <C-{hjkl}> with arrows
-vim.api.nvim_set_keymap("!", "<C-h>", "<Left>",  {noremap = true, silent = true})
-vim.api.nvim_set_keymap("!", "<C-j>", "<Down>",  {noremap = true, silent = true})
-vim.api.nvim_set_keymap("!", "<C-k>", "<Up>",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("!", "<C-l>", "<Right>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("x", "<Down>",  "",      {noremap = true, silent = true})
+vim.api.nvim_set_keymap("!", "<C-h>", "<Left>", keybindingOpts)
+vim.api.nvim_set_keymap("!", "<C-j>", "<Down>", keybindingOpts)
+vim.api.nvim_set_keymap("!", "<C-k>", "<Up>", keybindingOpts)
+vim.api.nvim_set_keymap("!", "<C-l>", "<Right>", keybindingOpts)
+vim.api.nvim_set_keymap("x", "<Down>",  "", keybindingOpts)
 
 -- Utils
-vim.api.nvim_set_keymap("n", "<C-j>", "10jzz", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<C-k>", "10kzz", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "Y",     "y$",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "J",     "mzJ`z", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "N",     "Nzzzv", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "n",     "nzzzv", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<C-j>", "10jzz", keybindingOpts)
+vim.api.nvim_set_keymap("n", "<C-k>", "10kzz", keybindingOpts)
+vim.api.nvim_set_keymap("n", "Y", "y$", keybindingOpts)
+vim.api.nvim_set_keymap("n", "J", "mzJ`z", keybindingOpts)
+vim.api.nvim_set_keymap("n", "N", "Nzzzv", keybindingOpts)
+vim.api.nvim_set_keymap("n", "n", "nzzzv", keybindingOpts)
 
 -- Undo checkpoints while inserting
-vim.api.nvim_set_keymap("i", ",", ",<C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", ".", ".<C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", "!", "!<C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", "(", "(<C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", ")", ")<C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", "<", "<lt><C-g>u", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", ">", "><C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", "}", "}<C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", "{", "{<C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", "[", "[<C-g>u",    {noremap = true, silent = true})
-vim.api.nvim_set_keymap("i", "]", "]<C-g>u",    {noremap = true, silent = true})
+vim.api.nvim_set_keymap("i", ",", ",<C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", ".", ".<C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", "!", "!<C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", "(", "(<C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", ")", ")<C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", "<", "<lt><C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", ">", "><C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", "}", "}<C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", "{", "{<C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", "[", "[<C-g>u", keybindingOpts)
+vim.api.nvim_set_keymap("i", "]", "]<C-g>u", keybindingOpts)
 
 -- Disable highlight after search
-vim.api.nvim_set_keymap("c", "<CR>", "<CR>:noh<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("c", "<CR>", "<CR>:noh<CR>", keybindingOpts)
 
 -- Delete buffer
-vim.api.nvim_set_keymap("n", "<leader>q", ":bdelete<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>q", ":bdelete<CR>", keybindingOpts)
 
 -- Navigate buffers
-vim.api.nvim_set_keymap("n", "<tab>",   ":bnext<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<s-tab>", ":bprev<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<tab>", ":bnext<CR>", keybindingOpts)
+vim.api.nvim_set_keymap("n", "<s-tab>", ":bprev<CR>", keybindingOpts)
 

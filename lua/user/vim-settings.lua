@@ -7,6 +7,7 @@ vim.opt.cursorline = true
 vim.opt.autoread = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+
 vim.cmd 'set noexpandtab'
 vim.cmd 'set nowrap'
 vim.cmd 'set formatoptions-=cro'

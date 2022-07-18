@@ -1,18 +1,16 @@
-local use = require("packer").use
-
-use {
+require("packer").use {
 	'nvim-lualine/lualine.nvim',
+	requires = {'kyazdani42/nvim-web-devicons'},
 	config = function()
 		require('lualine').setup {
 			options = {
 				icons_enabled = true,
-				theme = 'auto',
 				component_separators = { left = '', right = ''},
 				section_separators = { left = '', right = ''},
 				disabled_filetypes = {},
 				always_divide_middle = true,
 				globalstatus = false,
-				theme = "gruvbox"
+				theme = "auto"
 			},
 			sections = {
 				lualine_a = {'mode'},
