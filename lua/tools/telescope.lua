@@ -1,23 +1,17 @@
-require("packer").use {
-	'nvim-telescope/telescope.nvim',
-	requires = { 'kyazdani42/nvim-web-devicons' },
-	config = function()
-		local telescope = require("telescope")
-		local actions = require("telescope.actions")
+local telescope = require("telescope")
+local actions = require("telescope.actions")
 
-		vim.api.nvim_set_keymap("n", "<leader>f", ":lua require'utils/telescope-functions'.project_files()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>f", ":lua require'utils/telescope-functions'.project_files()<CR>", {noremap = true, silent = true})
 
-		-- Telescope
-		telescope.setup{
-			defaults = {
-				mappings = {
-					i = {
-						["<C-j>"] = actions.move_selection_next,
-						["<C-k>"] = actions.move_selection_previous,
-					}
-				}
+-- Telescope
+telescope.setup{
+	defaults = {
+		mappings = {
+			i = {
+				["<C-j>"] = actions.move_selection_next,
+				["<C-k>"] = actions.move_selection_previous,
 			}
 		}
-	end
+	}
 }
 
