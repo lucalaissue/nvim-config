@@ -2,6 +2,7 @@
 
 * Git
 * npm, nodejs
+* g++ / some x64 c++ compiler
 
 # How to use
 
