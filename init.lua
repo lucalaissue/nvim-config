@@ -13,5 +13,5 @@ require("tools.harpoon")
 require("tools.telescope")
 require("tools.toggleterm")
 require("tools.nvimtree")
-require("utils.packer-sync") -- required
+require("tools.vgit")
 
