@@ -7,7 +7,7 @@ cmp.setup({
 	snippet = {
 		expand = function(args)
 			vim.fn["vsnip#anonymous"](args.body)
-		end,
+		end
 	},
 	window = {
 		documentation = cmp.config.window.bordered(),
@@ -24,9 +24,9 @@ cmp.setup({
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
 		{ name = 'nvim_lsp_signature_help' },
-		{ name = 'vsnip' },
+		{ name = 'vsnip' }
 	}, {
-		{ name = 'buffer' },
+		{ name = 'buffer' }
 	})
 })
 
