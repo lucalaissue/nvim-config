@@ -16,3 +16,5 @@ vim.diagnostic.config({
 })
 
 require("lsp.servers.lsp_installer")
+require("lsp.servers.rust")
+require("lsp.servers.scala")

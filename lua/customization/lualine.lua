@@ -15,7 +15,7 @@ require('lualine').setup {
 		lualine_a = {'mode'},
 		lualine_b = {'branch', 'diff', 'diagnostics'},
 		lualine_c = {{'filename', path = 1}},
-		lualine_x = {'encoding', 'filetype'},
+		lualine_x = {'fileformat', 'encoding', 'filetype'},
 		lualine_y = { osTime },
 		lualine_z = {'location'}
 	},

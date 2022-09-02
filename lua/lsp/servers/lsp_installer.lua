@@ -1,5 +1,7 @@
 local lsp_installer = require('nvim-lsp-installer')
 
+lsp_installer.setup{}
+
 -- Setup Installed servers
 for _, server in pairs(lsp_installer.get_installed_servers()) do
 	require('lspconfig')[server.name].setup {

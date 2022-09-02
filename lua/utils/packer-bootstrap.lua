@@ -18,7 +18,6 @@ return require("packer").startup(function(use)
 	use 'kyazdani42/nvim-web-devicons'
 	use 'nvim-lualine/lualine.nvim'
 	use 'hrsh7th/nvim-cmp'
-	use 'kyazdani42/nvim-web-devicons'
 	use 'onsails/lspkind.nvim'
 	use 'hrsh7th/cmp-nvim-lsp-signature-help'
 	use 'hrsh7th/cmp-vsnip'
@@ -37,5 +36,7 @@ return require("packer").startup(function(use)
 	use 'nvim-telescope/telescope.nvim'
 	use 'akinsho/toggleterm.nvim'
 	use 'tanvirtin/vgit.nvim'
+	use 'scalameta/nvim-metals'
+	use 'jreybert/vimagit'
 end)
 
