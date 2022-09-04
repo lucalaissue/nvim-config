@@ -24,6 +24,7 @@ return require("packer").startup(function(use)
 	use 'kyazdani42/nvim-tree.lua'
 	use 'akinsho/toggleterm.nvim'
 	use 'tanvirtin/vgit.nvim'
+	use 'ahmedkhalf/project.nvim'
 
 	-- Telescope
 	use 'nvim-telescope/telescope.nvim'
@@ -37,7 +38,6 @@ return require("packer").startup(function(use)
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'williamboman/nvim-lsp-installer'
 	use 'folke/trouble.nvim'
-
 	-- Languages Servers
 	use 'scalameta/nvim-metals'
 
@@ -45,7 +45,6 @@ return require("packer").startup(function(use)
 	use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" }
 	use 'nvim-treesitter/nvim-treesitter-context'
 	use 'p00f/nvim-ts-rainbow'
-
 
 	-- Customization
 	use 'lukas-reineke/indent-blankline.nvim'

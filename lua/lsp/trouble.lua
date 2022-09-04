@@ -45,5 +45,5 @@ require("trouble").setup {
 	},
 	use_diagnostic_signs = true
 }
-vim.api.nvim_set_keymap("n", "<Leader>D",  "<CMD>Trouble workspace_diagnostics<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "<Leader>d",  "<CMD>Trouble document_diagnostics<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<Leader>DD",  "<CMD>Trouble workspace_diagnostics<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<Leader>Dd",  "<CMD>Trouble document_diagnostics<CR>", {noremap = true, silent = true})
