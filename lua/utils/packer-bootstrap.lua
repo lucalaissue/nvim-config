@@ -38,6 +38,7 @@ return require("packer").startup(function(use)
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'williamboman/nvim-lsp-installer'
 	use 'folke/trouble.nvim'
+
 	-- Languages Servers
 	use 'scalameta/nvim-metals'
 

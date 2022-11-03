@@ -12,7 +12,8 @@ end
 
 vim.diagnostic.config({
 	virtual_text = false,
-	underline = false
+	underline = false,
+	severity_sort = true
 })
 
 require("lsp.servers.lsp_installer")
