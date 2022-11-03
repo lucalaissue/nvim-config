@@ -53,5 +53,6 @@ return require("packer").startup(function(use)
 
 	-- Colorschemes
 	use 'sainnhe/sonokai'
+	use 'sainnhe/gruvbox-material'
 end)
 

@@ -12,7 +12,7 @@ require("lsp.lsp")
 require("lsp.cmp")
 require("lsp.treesitter")
 require("lsp.trouble")
-require("customization.sonokai")
+require("customization.gruvbox")
 require("customization.indent-blankline")
 require("customization.lualine")
 
