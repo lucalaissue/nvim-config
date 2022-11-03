@@ -1,7 +1,7 @@
 local telescope = require("telescope")
 local actions = require("telescope.actions")
 
-vim.api.nvim_set_keymap("n", "<leader>f", ":lua require'utils/telescope-functions'.project_files()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>f", ":lua require'telescope.builtin'.find_files()<CR>", {noremap = true, silent = true})
 
 -- Telescope
 telescope.setup{
