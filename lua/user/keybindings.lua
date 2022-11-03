@@ -39,9 +39,6 @@ vim.api.nvim_set_keymap("i", "{", "{<C-g>u", keybindingOpts)
 vim.api.nvim_set_keymap("i", "[", "[<C-g>u", keybindingOpts)
 vim.api.nvim_set_keymap("i", "]", "]<C-g>u", keybindingOpts)
 
--- Disable highlight after search
-vim.api.nvim_set_keymap("c", "<CR>", "<CR>:noh<CR>", keybindingOpts)
-
 -- Delete buffer
 vim.api.nvim_set_keymap("n", "<leader>q", ":bdelete<CR>", keybindingOpts)
 
