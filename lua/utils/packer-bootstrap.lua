@@ -24,19 +24,20 @@ return require("packer").startup(function(use)
 	use 'kyazdani42/nvim-tree.lua'
 	use 'akinsho/toggleterm.nvim'
 	use 'tanvirtin/vgit.nvim'
-	use 'ahmedkhalf/project.nvim'
+	use 'sbdchd/neoformat'
 
 	-- Telescope
 	use 'nvim-telescope/telescope.nvim'
 
 	-- LSP
 	use 'neovim/nvim-lspconfig'
+	use 'williamboman/mason.nvim'
+	use 'williamboman/mason-lspconfig.nvim'
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-nvim-lsp-signature-help'
 	use 'hrsh7th/cmp-vsnip'
 	use 'hrsh7th/vim-vsnip'
 	use 'hrsh7th/cmp-nvim-lsp'
-	use 'williamboman/nvim-lsp-installer'
 	use 'folke/trouble.nvim'
 
 	-- Languages Servers
@@ -48,12 +49,12 @@ return require("packer").startup(function(use)
 	use 'p00f/nvim-ts-rainbow'
 
 	-- Customization
-	use 'lukas-reineke/indent-blankline.nvim'
+	-- use 'lukas-reineke/indent-blankline.nvim'
 	use 'nvim-lualine/lualine.nvim'
 	use 'onsails/lspkind.nvim'
 
 	-- Colorschemes
 	use 'sainnhe/sonokai'
 	use 'sainnhe/gruvbox-material'
+	use 'Mofiqul/vscode.nvim'
 end)
-
