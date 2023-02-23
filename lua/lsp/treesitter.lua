@@ -11,14 +11,11 @@ require'nvim-treesitter.configs'.setup {
 		"typescript",
 		"vue"
 	},
-	sync_install = false,
+	sync_install = true,
 	auto_install = true,
 	highlight = {
 		enable = true,
-		additional_vim_regex_highlighting = false,
-	},
-	rainbow = {
-		enable = false
+		additional_vim_regex_highlighting = false
 	}
 }
 
@@ -28,12 +25,7 @@ require'treesitter-context'.setup {
 		default = {
 			'class',
 			'function',
-			'method',
-			'for',
-			'while',
-			'if',
-			'switch',
-			'case'
+			'method'
 		}
 	}
 }
