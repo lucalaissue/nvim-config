@@ -49,7 +49,7 @@ return require("packer").startup(function(use)
 	use 'p00f/nvim-ts-rainbow'
 
 	-- Customization
-	-- use 'lukas-reineke/indent-blankline.nvim'
+	use 'lukas-reineke/indent-blankline.nvim'
 	use 'nvim-lualine/lualine.nvim'
 	use 'onsails/lspkind.nvim'
 
