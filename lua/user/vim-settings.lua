@@ -10,9 +10,11 @@ vim.opt.shiftwidth = 8
 vim.opt.termguicolors = true
 vim.wo.signcolumn = 'yes'
 
-vim.cmd 'set nohlsearch'
-vim.cmd 'set noexpandtab'
-vim.cmd 'set nowrap'
-vim.cmd 'set formatoptions-=cro'
-vim.cmd 'set colorcolumn=80'
-vim.cmd 'set clipboard^=unnamed,unnamedplus'
+vim.cmd [[
+	set nohlsearch
+	set noexpandtab
+	set nowrap
+	set formatoptions-=cro
+	set colorcolumn=80
+	set clipboard^=unnamed,unnamedplus
+]]

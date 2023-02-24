@@ -3,8 +3,7 @@ local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
 	print("Installing packer...")
 	fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-	io.write(string.format("Packer.nvim installed. You may restart neovim now.\n"))
-	os.exit(0)
+	print("Packer installed")
 end
 
 return require("packer").startup(function(use)
@@ -53,7 +52,5 @@ return require("packer").startup(function(use)
 	use 'onsails/lspkind.nvim'
 
 	-- Colorschemes
-	use 'sainnhe/sonokai'
-	use 'sainnhe/gruvbox-material'
 	use 'Mofiqul/vscode.nvim'
 end)
