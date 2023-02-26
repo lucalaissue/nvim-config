@@ -30,4 +30,3 @@ require("vgit").setup({
 })
 
 vim.api.nvim_set_keymap("n", "<leader>gc", ":lua require('telescope.builtin').git_commits()<CR>", {noremap = true, silent = true})
-

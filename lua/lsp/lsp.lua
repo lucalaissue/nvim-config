@@ -11,11 +11,9 @@ for type, icon in pairs(signs) do
 end
 
 vim.diagnostic.config({
-	virtual_text = false,
+	virtual_text = true,
 	underline = false,
 	severity_sort = true
 })
 
-require("lsp.servers.lsp_installer")
-require("lsp.servers.rust")
-require("lsp.servers.scala")
+require("lsp.servers.mason")

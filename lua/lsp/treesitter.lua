@@ -1,12 +1,17 @@
 require'nvim-treesitter.configs'.setup {
-	ensure_installed = "all",
-	sync_install = false,
-	auto_install = true,
-	highlight = {
-		enable = true,
-		additional_vim_regex_highlighting = false,
+	ensure_installed = {
+		"c",
+		"cpp",
+		"java",
+		"javascript",
+		"lua",
+		"python",
+		"rust",
+		"scala",
+		"typescript",
+		"vue"
 	},
-	rainbow = {
+	highlight = {
 		enable = true
 	}
 }
@@ -17,12 +22,7 @@ require'treesitter-context'.setup {
 		default = {
 			'class',
 			'function',
-			'method',
-			'for',
-			'while',
-			'if',
-			'switch',
-			'case'
+			'method'
 		}
 	}
 }

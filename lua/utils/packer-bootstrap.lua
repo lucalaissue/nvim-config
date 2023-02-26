@@ -3,8 +3,7 @@ local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
 	print("Installing packer...")
 	fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-	io.write(string.format("Packer.nvim installed. You may restart neovim now.\n"))
-	os.exit(0)
+	print("Packer installed")
 end
 
 return require("packer").startup(function(use)
@@ -24,19 +23,20 @@ return require("packer").startup(function(use)
 	use 'kyazdani42/nvim-tree.lua'
 	use 'akinsho/toggleterm.nvim'
 	use 'tanvirtin/vgit.nvim'
-	use 'ahmedkhalf/project.nvim'
+	use 'sbdchd/neoformat'
 
 	-- Telescope
 	use 'nvim-telescope/telescope.nvim'
 
 	-- LSP
 	use 'neovim/nvim-lspconfig'
+	use 'williamboman/mason.nvim'
+	use 'williamboman/mason-lspconfig.nvim'
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-nvim-lsp-signature-help'
 	use 'hrsh7th/cmp-vsnip'
 	use 'hrsh7th/vim-vsnip'
 	use 'hrsh7th/cmp-nvim-lsp'
-	use 'williamboman/nvim-lsp-installer'
 	use 'folke/trouble.nvim'
 
 	-- Languages Servers
@@ -45,7 +45,6 @@ return require("packer").startup(function(use)
 	-- Treesitter
 	use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" }
 	use 'nvim-treesitter/nvim-treesitter-context'
-	use 'p00f/nvim-ts-rainbow'
 
 	-- Customization
 	use 'lukas-reineke/indent-blankline.nvim'
@@ -53,7 +52,5 @@ return require("packer").startup(function(use)
 	use 'onsails/lspkind.nvim'
 
 	-- Colorschemes
-	use 'sainnhe/sonokai'
-	use 'sainnhe/gruvbox-material'
+	use 'Mofiqul/vscode.nvim'
 end)
-
