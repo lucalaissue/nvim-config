@@ -12,7 +12,10 @@ require'nvim-treesitter.configs'.setup {
 		"vue"
 	},
 	highlight = {
-		enable = true
+		enable = true,
+		disable = {
+			"lua"
+		}
 	}
 }
 

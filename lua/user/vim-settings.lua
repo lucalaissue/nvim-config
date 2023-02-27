@@ -18,3 +18,4 @@ vim.cmd [[
 	set colorcolumn=80
 	set clipboard^=unnamed,unnamedplus
 ]]
+
