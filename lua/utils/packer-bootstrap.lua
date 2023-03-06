@@ -24,6 +24,7 @@ return require("packer").startup(function(use)
 	use 'akinsho/toggleterm.nvim'
 	use 'tanvirtin/vgit.nvim'
 	use 'sbdchd/neoformat'
+	use 'preservim/nerdcommenter'
 
 	-- Telescope
 	use 'nvim-telescope/telescope.nvim'
@@ -38,8 +39,6 @@ return require("packer").startup(function(use)
 	use 'hrsh7th/vim-vsnip'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'folke/trouble.nvim'
-
-	-- Languages Servers
 	use 'scalameta/nvim-metals'
 
 	-- Treesitter

@@ -17,3 +17,4 @@ vim.diagnostic.config({
 })
 
 require("lsp.servers.mason")
+require("lsp.servers.metals")
