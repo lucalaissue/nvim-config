@@ -16,5 +16,6 @@ vim.diagnostic.config({
 	severity_sort = true
 })
 
+
 require("lsp.servers.mason")
-require("lsp.servers.metals")
+-- require("lsp.servers.metals")

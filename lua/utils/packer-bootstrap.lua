@@ -39,7 +39,7 @@ return require("packer").startup(function(use)
 	use 'hrsh7th/vim-vsnip'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'folke/trouble.nvim'
-	use 'scalameta/nvim-metals'
+	-- use 'scalameta/nvim-metals'
 
 	-- Treesitter
 	use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" }

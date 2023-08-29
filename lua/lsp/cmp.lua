@@ -9,9 +9,6 @@ cmp.setup({
 			vim.fn["vsnip#anonymous"](args.body)
 		end
 	},
-	window = {
-		documentation = cmp.config.window.bordered(),
-	},
 	formatting = {
 		format = lspkind.cmp_format()
 	},

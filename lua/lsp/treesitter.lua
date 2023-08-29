@@ -1,16 +1,4 @@
 require'nvim-treesitter.configs'.setup {
-	ensure_installed = {
-		"c",
-		"cpp",
-		"java",
-		"javascript",
-		"lua",
-		"python",
-		"rust",
-		"scala",
-		"typescript",
-		"vue"
-	},
 	highlight = {
 		enable = true,
 		disable = {
